@@ -1,0 +1,8 @@
+dependencies {
+  compile project(':launcher')
+  runtime project(':sample-engine')
+
+  runtime 'org.slf4j:slf4j-simple:1.7.12'
+
+  runtime project(':fun-test')
+}

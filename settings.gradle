@@ -1,0 +1,7 @@
+include 'launcher',
+    'engine-api',
+    'sample-engine',
+    'sample-engine-user',
+    'core',
+    'fun-test',
+    'launcher-usage'
