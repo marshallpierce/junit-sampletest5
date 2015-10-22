@@ -39,10 +39,9 @@ public final class SampleEngine implements Engine {
             for (Method method : klass.getDeclaredMethods()) {
                 SampleTest annotation = method.getAnnotation(SampleTest.class);
                 if (annotation != null) {
-
                     Object instance;
                     try {
-                        Constructor<?> constructor = klass.getConstructor();
+                        Constructor<?> constructor = klass.getDeclaredConstructor();
                         constructor.setAccessible(true);
                         instance = constructor.newInstance();
                     } catch (InstantiationException | IllegalAccessException | InvocationTargetException | NoSuchMethodException e) {
